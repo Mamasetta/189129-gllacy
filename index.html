@@ -15,7 +15,7 @@
             <a href="#" class="link">Каталог</a>
             <ul class="submenu">
               <li><a href="#">Новинки</a></li>
-              <li><a href="#">Сливочное</a></li>
+              <li><a href="#catalog">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
@@ -29,16 +29,19 @@
           </li>
         </ul>
       </nav>
-      <div class="user-block">
+      <section class="user-block">
         <div class="search">
           <a href="#" class="search-btn"></a>
-          <input type="text" name="search" placeholder="Что ищем?">
+          <label for="search-id">Что ищем?</label>
+          <input type="text" name="search" id="search-id" placeholder="Что ищем?">
         </div>
         <div class="login">
           <a href="#" class="login-btn">Вход</a>
           <fieldset>
-            <input type="email" placeholder="Электронная почта">
-            <input type="password" placeholder="Пароль">
+            <label for="email-id">Электронная почта</label>
+            <input type="email" id="email-id" placeholder="Электронная почта">
+            <label for="password-id">Пароль</label>
+            <input type="password" id="password-id" placeholder="Пароль">
             <a href="#" class="btn">Войти</a>
             <a href="#" class="link">Забыли пароль?</a>
             <a href="#" class="link">Новая регистрация</a>
@@ -47,11 +50,11 @@
         <div class="basket">
           <a href="#" class="basket-btn">Пусто</a>
         </div>
-      </div>
-      <div class="contacts">
+      </section>
+      <section class="contacts">
         <p>10 до 20, ежедневно<br>
         <b>8 812 450-25-25</b></p>
-      </div>
+      </section>
     </header>
     <main>
       <section class="slider">
@@ -87,7 +90,7 @@
       <section class="hits">
         <div class="hits hit-1">
           <a href="#">
-            <img src="hit-1.png" class="hits-img" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="good-1.png" class="hits-img" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
           <span>310    /кг</span>
           <a href="#" class="link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -95,7 +98,7 @@
         </div>
         <div class="hits hit-2">
           <a href="#">
-            <img src="hit-2.png" class="hits-img" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="good-2.png" class="hits-img" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
           <span>380    /кг</span>
           <a href="#" class="link">Сливочно-кофейное с кусочками шоколада</a>
@@ -103,7 +106,7 @@
         </div>
         <div class="hits hit-3">
           <a href="#">
-            <img src="hit-3.png" class="hits-img" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="good-3.png" class="hits-img" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
           <span>355    /кг</span>
           <a href="#" class="link">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -111,7 +114,7 @@
         </div>
         <div class="hits hit-4">
           <a href="#">
-            <img src="hit-4.png" class="hits-img" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="good-4.png" class="hits-img" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           </a>
           <span>415    /кг</span>
           <a href="#" class="link">Сливочное крем-брюле с карамельной подливкой</a>
@@ -136,7 +139,8 @@
         </div>
         <div class="newsletter">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <input type="email" placeholder="Электронная почта">
+          <label for="email-id">Электронная почта</label>
+          <input type="email" id="email-id" placeholder="Электронная почта">
           <input type="submit" value="Отправить">
         </div>
       </div>
@@ -175,9 +179,12 @@
       </section>
     </footer>
     <fieldset>
-      <input type="text" name="name" placeholder="Как вас зовут?">
-      <input type="email" placeholder="Ваша почта для ответа?">
-      <textarea name="question" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+      <label for="name-id">Как вас зовут?</label>
+      <input type="text" name="name" id="name-id" placeholder="Как вас зовут?">
+      <label for="email-id">Ваша почта для ответа?</label>
+      <input type="email" id="email-id" placeholder="Ваша почта для ответа?">
+      <label for="question-id">Напишите что-нибудь...</label>
+      <textarea name="question" id="question-id" rows="6" placeholder="Напишите что-нибудь..."></textarea>
       <input type="submit" value="Отправить">
     </fieldset>
   </body>
