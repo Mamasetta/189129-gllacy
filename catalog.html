@@ -8,7 +8,7 @@
     <header class="page-header">
       <div class="container">
         <div class="logo">
-          <a href="#index">
+          <a href="index.html">
             <img src="logo.png" width="154" height="64" alt="Gllacy Shop">
           </a>
         </div>
@@ -18,7 +18,7 @@
               <a href="#" class="link">Каталог</a>
               <ul class="submenu">
                 <li><a href="#">Новинки</a></li>
-                <li><a href="#catalog">Сливочное</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
@@ -84,62 +84,62 @@
         </section>
         <section class="contacts">
           <p>10 до 20, ежедневно<br>
-          <a href="#">8 812 450-25-25</a></p>
+          <a href="tel:88124502525">8 812 450-25-25</a></p>
         </section>
       </div>
     </header>
     <section class="breadcrumbs">
       <div class="container">
-        <a href="#index">Главная</a>
-        <a href="#">Каталог</a>
-        <a href="#">Сливочное</a>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Сливочное</a></li>
+        </ul>
       </div>
     </section>
     <main class="container">
       <h1>Сливочное мороженое</h1>
       <section class="filters">
-        <div class="sorting">
-          <label for="sorting-id">Сортировка:</label>
-          <select name="sorting-name" id="sorting-id">
-            <option value="popularity">по популярности</option>
-            <option value="cheap">сначала недорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
-        </div>
-        <div class="range-filter">
-          <div class="price-controls">
-            от <input type="text" class="min-price" value="0">
-            до <input class="max-price" value="10000">
+        <form action="#" method="post"
+          <div class="sorting">
+            <label class="filters-title" for="sorting-id">Сортировка:</label>
+            <select name="sorting-name" id="sorting-id">
+              <option value="popularity">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
           </div>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="width:70%;"></div>
+          <div class="range-filter">
+            <div class="price-controls">
+              от <input type="text" class="min-price" value="0">
+              до <input class="max-price" value="10000">
             </div>
-            <div class="toggle min-toggle"></div>
-            <div class="toggle max-toggle"></div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width:70%;"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
           </div>
-        </div>
-        <div class="fat">
-          <fieldset>
-            <legend>Жирность:</legend>
+          <div class="fat"
+            <h2 class="filters-title">Жирность:</h2>
             <input type="radio" name="fat-name" value="0">0%
             <input type="radio" name="fat-name" value="up-to-10">до 10%
             <input type="radio" name="fat-name" value="up-to-30">до 30%
             <input type="radio" name="fat-name" value="more-then-30">выше 30%
-          </fieldset>
-        </div>
-        <div class="fillers">
-          <fieldset>
-            <legend>Наполнители:</legend>
+          </div>
+          <div class="fillers">
+            <h2 class="filters-title">Наполнители:</h2>
             <input type="checkbox" name="choco">шоколадные
             <input type="checkbox" name="powder">сахарные присыпки
             <input type="checkbox" name="fruit">фрукты
             <input type="checkbox" name="syrups">сиропы
             <input type="checkbox" name="jams">джемы
-          </fieldset>
+          </div>
           <input type="submit" class="btn" value="Применить">
-        </div>
+        </form>
       </section>
       <section class="goods">
         <div class="row-1">
@@ -246,13 +246,15 @@
         </div>
       </section>
       <section class="paginator">
-        <a href="#prev" class="prev disabled">Назад</a>
-        <a href="#1" class="current">1</a>
-        <a href="#2">2</a>
-        <a href="#3">3</a>
-        <a href="#4">4</a>
-        <a href="#5">5</a>
-        <a href="#next" class="next">Вперёд</a>
+        <ul>
+          <li><a href="#prev" class="prev disabled">Назад</a></li>
+          <li><a href="#1" class="current">1</a></li>
+          <li><a href="#2">2</a></li>
+          <li><a href="#3">3</a></li>
+          <li><a href="#4">4</a></li>
+          <li><a href="#5">5</a></li>
+          <li><a href="#next" class="next">Вперёд</a></li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
