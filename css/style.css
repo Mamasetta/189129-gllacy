@@ -1,17 +1,37 @@
 body {
   line-height: 22px;
-  color: #ffffff;
   font-family: Roboto, sans-serif;
+  color: #ffffff;
+  background: #fbc5ec; /*временно чтобы видно было лого и текст*/
 }
-
+/*главная страница*/
+.banners-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.about-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+.blog-title {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+.popup-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+/*каталог*/
 h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
 }
-
-h2 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #323232;
+.filters-title {
+  font-size: 16px;
+  line-height: 14px;
 }
