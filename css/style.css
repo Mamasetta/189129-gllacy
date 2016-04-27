@@ -2,36 +2,232 @@ body {
   line-height: 22px;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  background: #fbc5ec; /*временно чтобы видно было лого и текст*/
+  background: #849d8f;
 }
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+.page-header {
+ min-height: 103px;
+}
+  .page-header-left {
+    float: left;
+    width: 560px;
+  }
+  .page-header-right {
+    float: right;
+    width: 560px;
+    text-align: right;
+  }
+  .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .logo,
+  .page-navigation {
+    display: inline-block;
+  }
+  .user-block .search,
+  .user-block .login,
+  .user-block .basket {
+    display: inline-block;
+  }
+  .menu .submenu {
+    display: none;
+  }
+  .user-block .search-content {
+    display: none;
+  }
+  .login .login-hover {
+    display: none;
+  }
+  .basket table {
+    display: none;
+  }
+.page-footer {
+ min-height: 103px;
+}
+  .footer-social {
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+  }
+  .info {
+    float: left;
+    width: 560px;
+    margin-right: 26px;
+  }
+  .footer-copyright {
+    float: right;
+    width: 267px;
+  }
+
 /*главная страница*/
-.banners-title {
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: bold;
+.slider {
+    position: relative;
+    margin: 0 auto;
 }
-.about-title {
-  font-size: 24px;
-  line-height: 30px;
-  color: #323232;
+  .slider-inner {
+    overflow: hidden;
+  }
+  .slider-slides {
+    width: 300%;
+  }
+  .slider-slides img {
+    float: left;
+  }
+.banners {
+ margin-bottom: 40px;
 }
-.blog-title {
-  font-size: 16px;
-  line-height: 22px;
-  color: #323232;
+  .jam {
+    float: left;
+    width: 560px;
+    min-height: 229px;
+    margin-right: 26px;
+    background-image: url('../img/jam.jpg');
+  }
+  .choco {
+    float: right;
+    width: 560px;
+    min-height: 229px;
+    background: url('../img/choco.jpg');
+  }
+  .banners-title {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+  }
+.hit {
+   margin-bottom: 40px;
+   font-size: 0;
 }
-.popup-title {
-  font-size: 24px;
-  line-height: 28px;
-  color: #323232;
+  .hits {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 26px;
+    width: 267px;
+    font-size: 16px;
+  }
+  .hits:last-child {
+    margin-right: 0;
+  }
+  .hits .btn {
+    display: none;
+  }
+.about{
+  min-height: 306px;
+  margin-bottom: 40px;
+  background: url('../img/Вафля_паттерн.jpg')
 }
+  .about-title {
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+  }
+.index-content {
+  margin-bottom: 40px;
+}
+  .news-blog {
+    float: left;
+    width: 560px;
+    min-height: 220px;
+    margin-right: 26px;
+    background: url('../img/blog-bg.jpg');
+  }
+  .newsletter {
+    float: right;
+    width: 560px;
+    min-height: 220px;
+    background: #f8f7f4;
+  }
+  .blog-title {
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+  }
+.map {
+  width: 1200px;
+  min-height: 430px;
+  margin: 0 auto 40px;
+  background: url('../img/map.jpg');
+}
+.popup {
+  display: none;
+}
+  .popup-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #323232;
+  }
+
 /*каталог*/
+.breadcrumbs {
+  width: 560px;
+}
 h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
 }
-.filters-title {
-  font-size: 16px;
-  line-height: 14px;
+.filters {
+  width: 880px;
+  min-height: 130px;
+  margin-bottom: 40px;
+  font-size: 0;
 }
+  .sorting {
+    display: inline-block;
+    width: 193px;
+    min-height: 56px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .range-filter {
+    display: inline-block;
+    width: 218px;
+    min-height: 56px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .fat {
+    display: inline-block;
+    width: 415px;
+    min-height: 56px;
+    font-size: 16px;
+  }
+  .fillers {
+    display: inline-block;
+    width: 702px;
+    min-height: 56px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .filters-title {
+    font-size: 16px;
+    line-height: 14px;
+  }
+.goods {
+  margin-bottom: 80px;
+}
+  .row-1,
+  .row-2,
+  .row-3 {
+    min-height: 325px;
+    margin-bottom: 40px;
+    font-size: 0;
+  }
+  .all-goods {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 26px;
+    width: 267px;
+    font-size: 16px;
+  }
+  .good-4,
+  .good-8,
+  .good-12 {
+    margin-right: 0;
+  }
