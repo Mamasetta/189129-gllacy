@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="page-header">
@@ -39,8 +40,7 @@
               <a href="#" class="search-btn"></a>
               <div class="search-content">
                 <form action="#" method="get">
-                  <label for="search-id">Что ищем?</label>
-                  <input type="text" name="search" id="search-id" placeholder="Что ищем?">
+                  <input type="text" name="search" placeholder="Что ищем?">
                 </form>
               </div>
             </div>
@@ -48,13 +48,15 @@
               <a href="#" class="login-btn">Вход</a>
               <div class="login-hover">
                 <form action="#" method="post">
-                  <label for="login-email-id">Электронная почта</label>
-                  <input type="email" id="login-email-id" placeholder="Электронная почта">
-                  <label for="password-id">Пароль</label>
-                  <input type="password" id="password-id" placeholder="Пароль">
-                  <input type="submit" class="btn" value="Войти">
-                  <a href="#" class="link">Забыли пароль?</a>
-                  <a href="#" class="link">Новая регистрация</a>
+                  <input type="email" placeholder="Электронная почта">
+                  <input type="password" placeholder="Пароль">
+                  <div class="login-left">
+                    <input type="submit" class="btn" value="Войти">
+                  </div>
+                  <div class="login-right">
+                    <a href="#" class="link-black">Забыли пароль?</a>
+                    <a href="#" class="link-black">Новая регистрация</a>
+                  </div>
                 </form>
               </div>
             </div>
@@ -161,8 +163,7 @@
           <div class="newsletter">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
             <form action="#" method="post">
-              <label for="news-email-id">Электронная почта</label>
-              <input type="email" id="news-email-id" placeholder="Электронная почта">
+              <input type="email" placeholder="Электронная почта">
               <input type="submit" value="Отправить">
             </form>
           </div>
@@ -186,17 +187,17 @@
       <div class="container clearfix">
         <section class="footer-social">
           <ul>
-            <li><a class="social-btn social-btn-twiter" href="#">Твитер</a></li>
-            <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-            <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-            <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+            <li><a class="social-btn social-btn-twiter" href="#"></a></li>
+            <li><a class="social-btn social-btn-inst" href="#"></a></li>
+            <li><a class="social-btn social-btn-fb" href="#"></a></li>
+            <li><a class="social-btn social-btn-vk" href="#"></a></li>
           </ul>
         </section>
         <div class="info">
           <ul>
-            <li><a href="#" class="link heart">Для поставщиков</a></li>
-            <li><a href="#" class="link">О производстве</a></li>
+            <li class="heart"><a href="#" class="link">Для поставщиков</a></li>
             <li><a href="#" class="link">Наши документы</a></li>
+            <li><a href="#" class="link">О производстве</a></li>
             <li><a href="#" class="link">Экологические стандарты</a></li>
           </ul>
         </div>
@@ -211,12 +212,9 @@
     <div class="popup">
       <h2 class="popup-title">Мы обязательно вам ответим!</h2>
       <form action="#" method="post">
-        <label for="name-id">Как вас зовут?</label>
-        <input type="text" name="name" id="name-id" placeholder="Как вас зовут?">
-        <label for="popup-email-id">Ваша почта для ответа?</label>
-        <input type="email" id="popup-email-id" placeholder="Ваша почта для ответа?">
-        <label for="question-id">Напишите что-нибудь...</label>
-        <textarea name="question" id="question-id" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <input type="email" placeholder="Ваша почта для ответа?">
+        <textarea name="question" rows="6" placeholder="Напишите что-нибудь..."></textarea>
         <input type="submit" value="Отправить">
       </form>
     </div>
