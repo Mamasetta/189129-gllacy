@@ -44,7 +44,7 @@
                 <a href="#" class="search-btn"></a>
                 <div class="search-content">
                   <form action="#" method="get">
-                    <input type="text" name="search" placeholder="Что ищем?">
+                    <input type="text" class="input-view" name="search" placeholder="Что ищем?">
                   </form>
                 </div>
               </div>
@@ -52,8 +52,8 @@
                 <a href="#" class="login-btn">Вход</a>
                 <div class="login-hover">
                   <form action="#" method="post">
-                    <input type="email" placeholder="Электронная почта">
-                    <input type="password" placeholder="Пароль">
+                    <input type="email" class="input-view" placeholder="Электронная почта">
+                    <input type="password" class="input-view" placeholder="Пароль">
                     <div class="login-left">
                       <input type="submit" class="btn" value="Войти">
                     </div>
@@ -158,24 +158,25 @@
               <h2 class="blog-title">Новое в нашем блоге</h2>
               <a href="#" class="blog">10  способов сервировки фруктовых щербетов к столу</a>
             </div>
+            <div class="newsletter-box">
               <div class="newsletter">
-              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-              <form action="#" method="post">
-                <input type="email" placeholder="Электронная почта">
-                <input type="submit" value="Отправить">
-              </form>
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                <form action="#" method="post">
+                  <input type="email" class="input-view" placeholder="Электронная почта">
+                  <input type="submit" class="btn" value="Отправить">
+                </form>
+              </div>
             </div>
           </div>
         </div>
         <section class="map">
-          <div class="pin"></div>
           <div class="map-info">
             <p>Адрес главного офиса и<br>
             офлайн магазина:<br>
             <b>ул. Большая Конюшенная<br>
             19/8, Санкт-Петербург</b></p>
             <p>Для заказов по телефону:<br>
-            <a href="#">8 812 450-25-25</a><br>
+            <a href="#" class="tel">8 812 450-25-25</a><br>
             (с 10 до 20 ежедневно)</p>
             <a href="#" class="btn">Форма обратной связи</a>
           </div>
@@ -209,14 +210,16 @@
           </section>
         </div>
       </footer>
-      <div class="popup">
-        <h2 class="popup-title">Мы обязательно вам ответим!</h2>
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="Как вас зовут?">
-          <input type="email" placeholder="Ваша почта для ответа?">
-          <textarea name="question" rows="6" placeholder="Напишите что-нибудь..."></textarea>
-          <input type="submit" value="Отправить">
-        </form>
+      <div class="popup-bg">
+        <div class="popup">
+          <h2 class="popup-title">Мы обязательно вам ответим!</h2>
+          <form action="#" method="post">
+            <input type="text" class="input-view" name="name" placeholder="Как вас зовут?">
+            <input type="email" class="input-view" placeholder="Ваша почта для ответа?">
+            <textarea class="input-view" name="question" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+            <input type="submit" class="btn" value="Отправить">
+          </form>
+        </div>
       </div>
     </div>
   </body>
