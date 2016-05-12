@@ -37,16 +37,16 @@
         </div>
         <div class="page-header-right">
           <section class="user-block">
-            <div class="search">
-              <a href="#" class="search-btn"></a>
+            <div class="search-block">
+              <a href="#" class="search"></a>
               <div class="search-content">
                 <form action="#" method="get">
                   <input type="text" class="input-view" name="search" placeholder="Что ищем?">
                 </form>
               </div>
             </div>
-            <div class="login">
-              <a href="#" class="login-btn">Вход</a>
+            <div class="login-block">
+              <a href="#" class="login">Вход</a>
               <div class="login-hover">
                 <form action="#" method="post">
                   <input type="email" class="input-view" placeholder="Электронная почта">
@@ -61,21 +61,21 @@
                 </form>
               </div>
             </div>
-            <div class="basket-full">
-              <a href="#" class="basket-btn-full">2 товара</a>
+            <div class="basket-full-block">
+              <a href="#" class="basket-full">2 товара</a>
               <table>
                 <tr>
-                  <td><button class="cross"><img src="img/cross.svg" alt="удалить"></button></td>
+                  <td><a class="cross"></a></td>
                   <td><img src="img/good-1.png" class="basket-img" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5 кг х <span>200 руб.</span></td>
                   <td>300 руб.</td>
                 </tr>
                 <tr>
-                  <td><button class="cross"><img src="img/cross.svg" alt="удалить"></button></td>
+                  <td><a class="cross"></a></td>
                   <td><img src="img/good-3.png" class="basket-img" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада"></td>
                   <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-                  <td>1,5 кг х <span>300 руб.</span></td>
+                  <td>1,5 кг х <span class="price-grey">300 руб.</span></td>
                   <td>450 руб.</td>
                 </tr>
                 <tr>
@@ -89,20 +89,20 @@
           </section>
           <section class="contacts">
             <p>10 до 20, ежедневно<br>
-            <a href="tel:88124502525">8 812 450-25-25</a></p>
+            <a href="tel:88124502525" class="contact">8 812 450-25-25</a></p>
           </section>
         </div>
       </div>
     </header>
-    <section class="breadcrumbs">
-      <div class="container">
+    <div class="container">
+      <section class="breadcrumbs">
         <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Сливочное</a></li>
+          <li><a href="index.html" class="link">Главная</a></li>
+          <li><a href="#" class="link">Каталог</a></li>
+          <li><a class="notlink">Сливочное</a></li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
     <main class="container">
       <h1>Сливочное мороженое</h1>
       <section class="filters">
@@ -285,7 +285,7 @@
           <a href="https://htmlacademy.ru">
             <img src="img/html-logo.svg" width="109" height="38" alt="HTML Academy">
           </a>
-          <p>Сделано в <a class="link" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+          <p>Сделано в <a class="link" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </section>
       </div>
     </footer>
