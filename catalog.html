@@ -41,9 +41,9 @@
               <a href="#" class="search"></a>
               <div class="search-content">
                 <form action="#" method="get">
-                  <input type="text" class="input-view" name="search">
                   <div class="label-box">
-                      <label class="input-label">Что ищем?</label>
+                    <input type="text" class="input-view" name="search" required>
+                    <label class="input-label">Что ищем?</label>
                   </div>
                 </form>
               </div>
@@ -52,13 +52,13 @@
               <a href="#" class="login">Вход</a>
               <div class="login-hover">
                 <form action="#" method="post">
-                  <input type="email" class="input-view">
                   <div class="label-box">
-                      <label class="input-label">Электронная почта</label>
+                    <input type="email" class="input-view" required>
+                    <label class="input-label">Электронная почта</label>
                   </div>
-                  <input type="password" class="input-view">
                   <div class="label-box">
-                      <label class="input-label">Пароль</label>
+                    <input type="password" class="input-view" required>
+                    <label class="input-label">Пароль</label>
                   </div>
                   <div class="login-left">
                     <input type="submit" class="btn" value="Войти">
@@ -118,8 +118,8 @@
         <form action="#" method="post">
           <div class="sorting">
             <h2 class="filters-title">Сортировка:</h2>
-            <div class="filters-slyle">
-              <select name="sorting-name">
+            <div class="select">
+              <select name="sorting-name" class="filters-slyle">
                 <option value="popularity">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>

@@ -45,9 +45,9 @@
                 <a href="#" class="search"></a>
                 <div class="search-content">
                   <form action="#" method="get">
-                    <input type="text" class="input-view" name="search">
                     <div class="label-box">
-                        <label class="input-label">Что ищем?</label>
+                      <input type="text" class="input-view" name="search" required>
+                      <label class="input-label">Что ищем?</label>
                     </div>
                   </form>
                 </div>
@@ -56,16 +56,16 @@
                 <a href="#" class="login">Вход</a>
                 <div class="login-hover">
                   <form action="#" method="post">
-                    <input type="email" class="input-view">
                     <div class="label-box">
-                        <label class="input-label">Электронная почта</label>
+                      <input type="email" class="input-view" required>
+                      <label class="input-label">Электронная почта</label>
                     </div>
-                    <input type="password" class="input-view">
                     <div class="label-box">
-                        <label class="input-label">Пароль</label>
+                      <input type="password" class="input-view" required>
+                      <label class="input-label">Пароль</label>
                     </div>
                     <div class="login-left">
-                      <input type="submit" class="btn" value="Войти">
+                      <input type="submit" class="btn" value="Войти" required>
                     </div>
                     <div class="login-right">
                       <a href="#" class="link-black">Забыли пароль?</a>
@@ -172,9 +172,9 @@
               <div class="newsletter">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form action="#" method="post">
-                  <input type="email" class="input-view">
                   <div class="label-box">
-                      <label class="input-label">Электронная почта</label>
+                    <input type="email" class="input-view" required>
+                    <label class="input-label">Электронная почта</label>
                   </div>
                   <input type="submit" class="btn" value="Отправить">
                 </form>
@@ -226,17 +226,17 @@
         <div class="popup">
           <h2 class="popup-title">Мы обязательно вам ответим!</h2>
           <form action="#" method="post">
-            <input type="text" class="input-view" name="name">
             <div class="label-box">
-                <label class="input-label">Как вас зовут?</label>
+              <input type="text" class="input-view" name="name" required>
+              <label class="input-label">Как вас зовут?</label>
             </div>
-            <input type="email" class="input-view">
             <div class="label-box">
-                <label class="input-label">Ваша почта для ответа?</label>
+              <input type="email" class="input-view" required>
+              <label class="input-label">Ваша почта для ответа?</label>
             </div>
-            <textarea class="input-view" name="question" rows="6"></textarea>
             <div class="label-box">
-                <label class="input-label">Напишите что-нибудь...</label>
+              <textarea class="input-view" name="question" rows="6" required></textarea>
+              <label class="input-label">Напишите что-нибудь...</label>
             </div>
             <input type="submit" class="btn" value="Отправить">
           </form>

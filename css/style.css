@@ -140,25 +140,41 @@ img {
   border-radius: 5px;
   outline: 0;
 }
+  .input-view:hover {
+    border: 2px solid #c7c6c5;
+  }
+  .input-view:focus {
+    border: 2px solid #8fbdec;
+  }
+  .input-view:valid {
+    border: 1px solid #d3d3d2;
+    color: #323232;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
 .label-box {
   position: relative;
-  width: 310px;
 }
   .input-label {
     position: absolute;
-    top: -60px;
-    left: 14px;
     font-size: 14px;
     line-height: 24px;
     pointer-events: none;
     color: #999999;
     transition: 0.2s ease all;
   }
-  .input-view:focus ~ .label-box .input-label,
-  .input-view:valid ~ .label-box .input-label {
+  .input-view:focus ~ .input-label,
+  .input-view:valid ~ .input-label {
     font-size: 11px;
     line-height: 13px;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
+  }
+  .input-view:focus ~ .input-label {
+    color: #5b9ddf;
+  }
+  .input-view:valid ~ .input-label {
+    color: #999999;
   }
   .page-header-left {
     float: left;
@@ -300,6 +316,10 @@ img {
       .search-block:hover .search-content {
         display: block;
       }
+      .search-content .input-label {
+        top: 10px;
+        left: 14px;
+      }
     .login {
       display: inline-block;
       vertical-align: top;
@@ -329,6 +349,10 @@ img {
       .login-block .input-view {
         width: 239px;
         margin-bottom: 20px;
+      }
+      .login-block .input-label {
+        top: 10px;
+        left: 14px;
       }
       .login-block:hover .login-hover {
         display: block;
@@ -847,15 +871,22 @@ img {
     border-radius: 15px;
   }
     .newsletter .input-view {
-      display: inline-block;
-      vertical-align: middle;
       width: 305px;
       margin-top: 5px;
       font-size: 16px;
       line-height: 24px;
     }
+    .newsletter .label-box {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .newsletter .input-label {
+      top: 15px;
+      left: 14px;
+    }
     .newsletter .btn {
       vertical-align: middle;
+      margin-left: 10px;
     }
 .map {
   position: relative;
@@ -906,12 +937,9 @@ img {
   height: 100%;
   background: rgba(50,50,50,0.3);
 }
-.map-info .btn:hover .popup-bg {
-  display: block;
-}
 .popup {
   position: fixed;
-  top: 30%;
+  top: 20%;
   left: 30%;
   z-index: 10;
   background: #f8f7f4;
@@ -929,6 +957,10 @@ img {
   }
   .popup textarea {
     width: 396px;
+  }
+  .popup .input-label {
+    top: 10px;
+    left: 14px;
   }
   .popup-title {
     font-size: 24px;
@@ -986,10 +1018,42 @@ h1 {
   .sorting {
     display: inline-block;
     vertical-align: bottom;
+    position: relative;
     margin-right: 15px;
     font-size: 16px;
     line-height: 18px;
   }
+    .select {
+      position: relative;
+    }
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+	    -moz-appearance: none;
+    }
+    .select::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 18px;
+      left: 160px;
+      width: 7px;
+      height: 5px;
+      background: url('../img/select.svg') no-repeat;
+    }
+    .select:hover::before {
+      background: url('../img/select-hover.svg')no-repeat;
+    }
+    option {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: normal;
+    }
+    select:hover,
+    option:hover {
+      color: #323232;
+      background: #ffffff;
+    }
   .range-filter {
     display: inline-block;
     vertical-align: bottom;
