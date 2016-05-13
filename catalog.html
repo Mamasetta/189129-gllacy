@@ -41,7 +41,10 @@
               <a href="#" class="search"></a>
               <div class="search-content">
                 <form action="#" method="get">
-                  <input type="text" class="input-view" name="search" placeholder="Что ищем?">
+                  <input type="text" class="input-view" name="search">
+                  <div class="label-box">
+                      <label class="input-label">Что ищем?</label>
+                  </div>
                 </form>
               </div>
             </div>
@@ -49,8 +52,14 @@
               <a href="#" class="login">Вход</a>
               <div class="login-hover">
                 <form action="#" method="post">
-                  <input type="email" class="input-view" placeholder="Электронная почта">
-                  <input type="password" class="input-view" placeholder="Пароль">
+                  <input type="email" class="input-view">
+                  <div class="label-box">
+                      <label class="input-label">Электронная почта</label>
+                  </div>
+                  <input type="password" class="input-view">
+                  <div class="label-box">
+                      <label class="input-label">Пароль</label>
+                  </div>
                   <div class="login-left">
                     <input type="submit" class="btn" value="Войти">
                   </div>
@@ -108,41 +117,50 @@
       <section class="filters">
         <form action="#" method="post">
           <div class="sorting">
-            <label class="filters-title" for="sorting-id">Сортировка:</label>
-            <select name="sorting-name" id="sorting-id">
-              <option value="popularity">по популярности</option>
-              <option value="cheap">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
+            <h2 class="filters-title">Сортировка:</h2>
+            <div class="filters-slyle">
+              <select name="sorting-name">
+                <option value="popularity">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </div>
           </div>
           <div class="range-filter">
-            <div class="price-controls">
-              от <input type="text" class="min-price" value="0">
-              до <input class="max-price" value="10000">
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar" style="width:70%;"></div>
-              </div>
+            <h2 class="filters-title">Цена: 100 руб. – 500 руб.</h2>
+            <div class="price-controls filters-slyle">
               <div class="toggle min-toggle"></div>
               <div class="toggle max-toggle"></div>
             </div>
           </div>
           <div class="fat">
             <h2 class="filters-title">Жирность:</h2>
-            <input type="radio" name="fat-name" value="0">0%
-            <input type="radio" name="fat-name" value="up-to-10">до 10%
-            <input type="radio" name="fat-name" value="up-to-30">до 30%
-            <input type="radio" name="fat-name" value="more-then-30">выше 30%
+            <div class="filters-slyle">
+              <input type="radio" name="fat-name" id="answer1" value="0">
+              <label for="answer1">0%</label>
+              <input type="radio" name="fat-name" id="answer2" value="up-to-10" checked>
+              <label for="answer2">до 10%</label>
+              <input type="radio" name="fat-name" id="answer3" value="up-to-30">
+              <label for="answer3">до 30%</label>
+              <input type="radio" name="fat-name" id="answer4" value="more-then-30">
+              <label for="answer4">выше 30%</label>
+            </div>
           </div>
           <div class="fillers">
             <h2 class="filters-title">Наполнители:</h2>
-            <input type="checkbox" name="choco">шоколадные
-            <input type="checkbox" name="powder">сахарные присыпки
-            <input type="checkbox" name="fruit">фрукты
-            <input type="checkbox" name="syrups">сиропы
-            <input type="checkbox" name="jams">джемы
+            <div class="filters-slyle">
+              <input type="checkbox" id="answer-1" name="choco" checked>
+              <label for="answer-1">шоколадные</label>
+              <input type="checkbox" id="answer-2" name="powder" checked>
+              <label for="answer-2">сахарные присыпки</label>
+              <input type="checkbox" id="answer-3" name="fruit">
+              <label for="answer-3">фрукты</label>
+              <input type="checkbox" id="answer-4" name="syrups">
+              <label for="answer-4">сиропы</label>
+              <input type="checkbox" id="answer-5" name="jams">
+              <label for="answer-5">джемы</label>
+            </div>
           </div>
           <input type="submit" class="btn" value="Применить">
         </form>
@@ -253,17 +271,17 @@
       </section>
       <section class="paginator">
         <ul>
-          <li><a href="#prev" class="prev disabled">Назад</a></li>
-          <li><a href="#1" class="current">1</a></li>
-          <li><a href="#2">2</a></li>
-          <li><a href="#3">3</a></li>
-          <li><a href="#4">4</a></li>
-          <li><a href="#5">5</a></li>
-          <li><a href="#next" class="next">Вперёд</a></li>
+          <li><a href="#prev" class="prev disabled">A</a></li>
+          <li><a href="#1" class="number current">1</a></li>
+          <li><a href="#2" class="number">2</a></li>
+          <li><a href="#3" class="number">3</a></li>
+          <li><a href="#4" class="number">4</a></li>
+          <li><a href="#5" class="number">5</a></li>
+          <li><a href="#next" class="next">B</a></li>
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer catalog-footer">
       <div class="container clearfix">
         <section class="footer-social">
           <ul>
