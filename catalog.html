@@ -361,6 +361,20 @@
           }
         }
       });
+      
+      var basketLink = document.querySelector(".basket-full-block");
+      var basketPopup = document.querySelector(".basket-full-block table");
+      basketLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        basketPopup.classList.add("basket-full-show");
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (basketPopup.classList.contains("basket-full-show")) {
+          basketPopup.classList.remove("basket-full-show");
+          }
+        }
+      });
     </script>
   </body>
 </html>

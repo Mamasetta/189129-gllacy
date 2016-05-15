@@ -522,7 +522,11 @@ img {
       .basket-full-block .btn {
         padding: 10px 12px;
       }
+      /*
       .basket-full-block:hover table{
+        display: block;
+      }*/
+      .basket-full-show {
         display: block;
       }
   .contacts p {
