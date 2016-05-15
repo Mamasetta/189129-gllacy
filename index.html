@@ -265,11 +265,12 @@
         }
       });
 
-      var loginLink = document.querySelector(".login-block");
+      var loginLink = document.querySelector(".login");
       var loginPopup = document.querySelector(".login-hover");
       var email = loginPopup.querySelector("[name=email]");
       var password = loginPopup.querySelector("[name=password]");
-      var loginForm = loginPopup.querySelector("form")
+      var loginForm = loginPopup.querySelector("form");
+      console.log(loginForm);
       var storage = localStorage.getItem("email");
       loginLink.addEventListener("click", function(event) {
         event.preventDefault();
@@ -281,11 +282,11 @@
           email.focus();
         }
       });
-      emailForm.addEventListener("submit", function(event) {
+      loginForm.addEventListener("submit", function(event) {
         event.preventDefault();
         if (!email.value || !password.value) {
           event.preventDefault();
-          loginPopup.classList.remove("login-hover-error");
+          loginPopup.classList.add("login-hover-error");
           loginPopup.offsetWidth = loginPopup.offsetWidth;
           loginPopup.classList.add("login-hover-error");
         } else {
@@ -300,6 +301,8 @@
           }
         }
       });
+
+
     </script>
   </body>
 </html>
