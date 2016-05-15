@@ -58,7 +58,7 @@ img {
      vertical-align: bottom;
      position: absolute;
      left: 0;
-     bottom: 0;
+     bottom: 2px;
      width: 100%;
      height: 1px;
      background: rgba(255,255,255,0.3);
@@ -90,7 +90,7 @@ img {
     vertical-align: bottom;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
     height: 1px;
     background: rgba(50,50,50,0.3);
@@ -110,7 +110,7 @@ img {
 .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 10px 25px;
+  padding: 10px 21px;
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
@@ -168,7 +168,7 @@ img {
   .input-view:valid ~ .input-label {
     font-size: 11px;
     line-height: 13px;
-    transform: translateY(-30px);
+    transform: translateY(-25px);
   }
   .input-view:focus ~ .input-label {
     color: #5b9ddf;
@@ -179,7 +179,8 @@ img {
   .page-header-left {
     float: left;
     width: 600px;
-    margin-top: 13px;
+    margin-left: -6px;
+    margin-top: 10px;
     font-size: 0;
   }
   .page-header-right {
@@ -192,12 +193,13 @@ img {
   .page-navigation {
     display: inline-block;
     vertical-align: top;
-    font-size: 16px;
-    font-weight: bold;
     margin-right: 15px;
+    font-size: 16px;
+    font-weight: 900;
   }
     .menu {
       margin: 0;
+      margin-top: 1px;
       padding: 0;
       list-style: none;
     }
@@ -209,7 +211,8 @@ img {
     }
     .page-navigation .menu > li > a {
       display: block;
-      margin: 7px 14px;
+      margin: 7px 10px 7px 14px;
+      font-weight: 500;
     }
       .menu > li > a:hover::after,
       .menu > li > a:active::after,
@@ -217,14 +220,14 @@ img {
         display: none;
       }
       .menu > li > a:hover {
-        padding: 7px 14px;
+        padding: 6px 11px 6px 13px;
         margin: 0;
         background: #f7f6f3;
         color: #333333;
         border-radius: 20px;
       }
       .menu > li > a:active {
-        padding: 7px 14px;
+        padding: 6px 11px 6px 13px;
         margin: 0;
         background: #f7f6f3;
         color: #333333;
@@ -232,8 +235,9 @@ img {
         box-shadow: inset 0 1px 2px #696969;
       }
       .page-navigation .menu > li > .active {
-        padding: 7px 14px;
+        padding: 6px 13px;
         margin: 0;
+        margin-right: -1px;
         color: #ffffff;
         background: #d07058;
         border-radius: 20px;
@@ -255,14 +259,18 @@ img {
     }
     .submenu li {
       font-size: 14px;
-      font-weight: normal;
+      font-weight: 500;
+      line-height: 16px;
     }
     .submenu a {
       display: block;
-      padding: 6px 20px;
+      padding: 10px 15px 10px 20px;
       text-decoration: none;
       color: #323232;
     }
+      .submenu li:first-child a {
+        padding: 10px 20px 10px 20px;
+      }
       .submenu a:hover {
         background: #fbded7;
       }
@@ -274,7 +282,7 @@ img {
       }
     .submenu li:first-child {
       font-weight: bold;
-      box-shadow: 0 7px 0 -6px rgba(50,50,50,0.2);
+      box-shadow: 0 6px 0 -5px rgba(50,50,50,0.2);
     }
     .menu > li:hover .submenu {
       display: block;
@@ -285,14 +293,17 @@ img {
   .user-block .basket-full-block {
     display: inline-block;
     vertical-align: top;
-    margin-left: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
   }
     .search {
       display: inline-block;
       vertical-align: top;
       position: relative;
-      width: 33px;
-      height: 33px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       background: rgba(255,255,255,0.2) url('../img/search.svg') no-repeat 50% 50%;
     }
@@ -302,16 +313,18 @@ img {
       .search-content {
         display: none;
         position: absolute;
-        right: 350px;
+        right: 330px;
         top: 60px;
         z-index: 10;
+        height: 44px;
         padding: 20px 15px;
         background: #f8f7f4;
         box-shadow: 0 10px 10px rgba(0,0,0,0.4);
-        border-radius: 10px;
+        border-radius: 5px;
       }
       .search-content .input-view {
-        width: 309px;
+        box-sizing: border-box;
+        width: 311px;
       }
       .search-block:hover .search-content {
         display: block;
@@ -324,7 +337,7 @@ img {
       display: inline-block;
       vertical-align: top;
       position: relative;
-      padding: 5px 17px 5px 45px;
+      padding: 8px 17px 8px 43px;
       text-decoration: none;
       color: #ffffff;
       border-radius: 25px;
@@ -337,17 +350,20 @@ img {
       .login-hover {
         display: none;
         position: absolute;
-        right: 235px;
+        right: 227px;
         top: 60px;
         z-index: 10;
-        width: 277px;
+        width: 237px;
+        height: 172px;
         padding: 20px;
         background: #f8f7f4;
         box-shadow: 0 10px 10px rgba(0,0,0,0.4);
-        border-radius: 10px;
+        border-radius: 5px;
       }
       .login-block .input-view {
-        width: 239px;
+        box-sizing: border-box;
+        width: 241px;
+        height: 44px;
         margin-bottom: 20px;
       }
       .login-block .input-label {
@@ -375,7 +391,7 @@ img {
       display: inline-block;
       vertical-align: top;
       position: relative;
-      padding: 5px 34px 5px 45px;
+      padding: 8px 35px 8px 44px;
       border-radius: 25px;
       background: rgba(255,255,255,0.2) url('../img/basket.svg') no-repeat 16px 50%;
       text-decoration: none;
@@ -385,8 +401,9 @@ img {
     }
     .user-block .basket-full {
       display: block;
+      margin-right: 0;
       position: relative;
-      padding: 5px 15px 5px 45px;
+      padding: 8px 20px 8px 40px;
       border-radius: 25px;
       background: #f7f6f3 url('../img/basket-2.png') no-repeat 16px 50%;
       text-decoration: none;
@@ -394,16 +411,16 @@ img {
       font-weight: bold;
     }
       .basket-full-block table {
-        display: none;
+        display: one;
         position: absolute;
-        right: 100px;
+        right: 62px;
         top: 60px;
         z-index: 10;
-        width: 510px;
-        padding: 20px 15px 10px;
+        width: 540px;
+        padding: 15px 25px 10px 15px;
         background: #f8f7f4;
         box-shadow: 0 10px 10px rgba(0,0,0,0.4);
-        border-radius: 10px;
+        border-radius: 5px;
         color: #323232;
         font-size: 13px;
         line-height: 16px;
@@ -412,6 +429,14 @@ img {
     .basket-full-block tr {
         text-align: left;
       }
+      .basket-full-block td:nth-child(2) {
+        width: 33px;
+        height: 33px;
+      }
+      .basket-full-block td:nth-child(3) {
+        padding-right: 20px;
+        width: 220px;
+      }
       .basket-full-block tr:nth-last-child(2),
       .basket-full-block tr:last-child {
         text-align: right;
@@ -419,14 +444,16 @@ img {
       .basket-full-block tr:nth-last-child(2) td {
         padding-top: 15px;
         padding-bottom: 0;
+        padding-right: 0;
         font-size: 15px;
         line-height: 18px;
         font-weight: bold;
         border-top: 1px solid #cacac7;
       }
       .basket-full-block td {
-        padding-bottom: 20px;
-        padding-left: 13px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        vertical-align: middle;
       }
       .basket-full-block td:first-child {
         padding-left: 0;
@@ -438,6 +465,7 @@ img {
       .basket-full-block td:nth-last-child(2),
       .basket-full-block td:last-child {
         white-space: nowrap;
+        width: 65px;
       }
       .basket-full-block .price-grey {
         color: #999999;
@@ -452,13 +480,13 @@ img {
         display: block;
       }
   .contacts p {
-    padding-top: 19px;
+    padding-top: 5px;
     font-size: 14px;
     line-height: 16px;
   }
     .contacts .contact {
       display: block;
-      padding-top: 9px;
+      padding-top: 3px;
       text-decoration: none;
       font-size: 22px;
       font-weight: bold;
@@ -477,12 +505,13 @@ img {
   }
   .footer-social li {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
+    padding-top: 15px;
     font-size: 0;
   }
   .social-btn {
     display: block;
-    margin-right: 12px;
+    margin-right: 9px;
     width: 31px;
     height: 31px;
     border: 3px solid rgba(254,254,254,0.5);
@@ -530,7 +559,7 @@ img {
     }
   .info {
     float: left;
-    width: 560px;
+    width: 500px;
     margin-right: 26px;
   }
     .info ul {
@@ -538,11 +567,14 @@ img {
       margin: 0;
       margin-left: 105px;
       padding: 0;
+      padding-top: 10px;
     }
     .info li {
       display: inline-block;
-      vertical-align: top;
+      vertical-align: bottom;
       padding-right: 8px;
+      font-size: 13px;
+      line-height: 18px;
     }
     .heart::before {
       content: " ";
@@ -558,7 +590,7 @@ img {
       padding-left: 22px;
     }
     .info li:last-child {
-      padding-left: 37px;
+      padding-left: 35px;
     }
   .footer-copyright {
     float: right;
@@ -570,16 +602,17 @@ img {
       display: block;
       width: 109px;
       height: 38px;
-      margin-left: 75px;
+      margin-left: 77px;
+      margin-bottom: 3px;
     }
     .footer-copyright p {
       font-size: 12px;
       line-height: 18px;
       margin-top: 0;
-      margin-left: 75px;
+      margin-left: 76px;
     }
   .catalog-footer {
-    padding-top: 35px;
+    padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.3);
   }
 
@@ -615,6 +648,7 @@ img {
   .slide-title {
   width: 700px;
   margin: 0 auto;
+  margin-top: -10px;
   margin-bottom: 30px;
   font-family: 'Roboto-black';
   font-size: 60px;
@@ -622,7 +656,7 @@ img {
   }
   .slider-controls {
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     left: 0;
     z-index: 20;
     font-size: 0;
@@ -632,6 +666,7 @@ img {
     vertical-align: top;
     width: 17px;
     height: 17px;
+    margin-top: -1px;
     margin-right: 8px;
     background: transparent;
     border: 2px solid #ffffff;
@@ -665,17 +700,18 @@ img {
   }
   .slide-btn {
     border-radius: 35px;
+    padding: 10px 40px;
     font-size: 32px;
     line-height: 44px;
     text-shadow: 0 2px 3px rgba(160,32,11,0.76);
   }
 
 .banners {
- margin-bottom: 40px;
+ margin-bottom: 33px;
 }
   .banner {
     width: 520px;
-    padding: 0 20px 23px;
+    padding: 0 22px 23px 18px;
     border-radius: 15px;
   }
   .banner {
@@ -691,27 +727,31 @@ img {
     background: #593d32 url('../img/choco.jpg');
   }
   .banners-title {
-    margin-bottom: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
     text-align: left;
   }
   .banners p {
-    margin-top: 23px;
+    margin-top: 15px;
+    margin-bottom: 45px;
     font-size: 18px;
     line-height: 22px;
     text-align: left;
   }
 .hit {
-   font-size: 0;
+  margin-left: 93px;
+  margin-bottom: -40px;
+  font-size: 0;
 }
   .all-goods {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-right: 1px;
-    padding: 8px 9px 17px;
+    margin-right: 10px;
+    padding: 8px 8px 17px;
     width: 267px;
     font-size: 16px;
     text-align: center;
@@ -721,6 +761,7 @@ img {
     margin-right: 0;
   }
     .all-goods:hover {
+      z-index: 2;
       background: rgba(255,255,255,0.2);
       border-radius: 10px;
       box-shadow: 0 10px 10px rgba(0,0,0,0.4);
@@ -732,8 +773,8 @@ img {
     content: " ";
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10;
+    left: 15;
     z-index: 2;
     width: 60px;
     height: 60px;
@@ -742,11 +783,11 @@ img {
   }
   .price {
     position: absolute;
-    left: 9px;
-    top: 215px;
+    left: 7px;
+    top: 216px;
     font-size: 30px;
     line-height: 45px;
-    font-weight: bold;
+    font-weight: 700;
     text-shadow: 1px 0 2px rgba(49,50,53,0.5);
   }
   .price span {
@@ -760,7 +801,10 @@ img {
     vertical-align: top;
     width: 36px;
     height: 41px;
-    background: url('../img/ruble.svg') no-repeat 50% 5px;
+    background: url('../img/ruble.svg') no-repeat 50% 6px;
+  }
+  .all-goods img {
+    margin-bottom: 5px;
   }
   .all-goods .link {
     display: inline;
@@ -779,13 +823,16 @@ img {
   .all-goods .btn {
     visibility: hidden;
     margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .all-goods:hover .btn {
     visibility: visible;
   }
 .about {
   margin-bottom: 40px;
-  padding: 10px 20px;
+  padding: 10px 10px 3px 15px;
   color: #323232;
   font-size: 16px;
   line-height: 22px;
@@ -793,27 +840,33 @@ img {
   background: #eadcc0 url('../img/wafer.jpg')
 }
   .about-title {
+    margin-top: 15px;
+    margin-left: 4px;
+    margin-bottom: 0;
     font-size: 24px;
+    font-weight: 700;
     line-height: 30px;
   }
   .about ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 20px;
     column-count: 2;
   }
   .about li {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     position: relative;
-    padding: 0 10px 10px 55px;
+    padding: 21px 3px 1px 60px;
   }
   .about li::before {
     content: " ";
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    left: 0;
+    top: 8px;
+    left: 4px;
     width: 49px;
     height: 49px;
     text-decoration: none;
@@ -837,8 +890,8 @@ img {
   .news-blog {
     float: left;
     width: 330px;
-    margin-right: 26px;
-    padding: 15px 210px 75px 20px;
+    margin-right: 15px;
+    padding: 10px 210px 80px 19px;
     background: #ffffff url('../img/blog-bg.jpg');
     border-radius: 15px;
   }
@@ -858,41 +911,43 @@ img {
     }
   .newsletter-box {
     float: right;
-    width: 538px;
-    padding: 6px;
+    width: 550px;
+    padding: 5px;
     background: #ecf2f5 url('../img/post.jpg');
     border-radius: 15px;
   }
   .newsletter {
-    padding: 20px 20px 35px;
+    padding: 14px 15px 35px 21px;
     color: #323232;
-    font-weight: normal;
     background: #f8f7f4;
     border-radius: 15px;
   }
     .newsletter .input-view {
-      width: 305px;
-      margin-top: 5px;
-      font-size: 16px;
-      line-height: 24px;
+      box-sizing: border-box;
+      width: 368px;
+      height: 43px;
+      margin-top: 20px;
     }
     .newsletter .label-box {
       display: inline-block;
       vertical-align: middle;
     }
     .newsletter .input-label {
-      top: 15px;
+      top: 30px;
       left: 14px;
+      font-size: 16px;
+      line-height: 24px;
     }
     .newsletter .btn {
-      vertical-align: middle;
-      margin-left: 10px;
+      vertical-align: bottom;
+      margin-left: 7px;
+      padding: 10px 18px;
     }
 .map {
   position: relative;
   width: 1200px;
   height: 430px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   background: #ece5c8 url('../img/map.jpg');
 }
   .map::before {
@@ -909,7 +964,7 @@ img {
     position: absolute;
     top: 62px;
     right: 27px;
-    padding: 20px 15px;
+    padding: 15px 25px 30px;
     color: #323232;
     font-size: 14px;
     font-weight: normal;
@@ -918,14 +973,30 @@ img {
     box-shadow: 0 10px 10px rgba(0,0,0,0.4);
     border-radius: 10px;
   }
+  .map-info p {
+    padding-bottom: 4px;
+  }
   .map-info b {
+    display: block;
+    margin-top: 3px;
     font-size: 18px;
+    line-height: 24px;
   }
   .map-info .tel {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 2px;
     text-decoration: none;
     font-size: 18px;
+    line-height: 24px;
     font-weight: bold;
     color: #323232
+  }
+  .map-info .btn {
+    margin-top: 5px;
+    padding: 10px 27px;
+    font-size: 18px;
+    line-height: 24px;
   }
 .popup-bg {
   display: none;
@@ -939,37 +1010,67 @@ img {
 }
 .popup {
   position: fixed;
-  top: 20%;
-  left: 30%;
+  top: 138px;
+  left: 436px;
   z-index: 10;
+  width: 427px;
   background: #f8f7f4;
   box-shadow: 0 10px 10px rgba(0,0,0,0.4);
   border-radius: 10px;
-  padding: 20px 15px;
+  padding: 15px 25px 20px;
 }
   .popup .input-view {
+    box-sizing: border-box;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
   .popup input[type="text"],
   .popup input[type="email"] {
-    width: 235px;
+    width: 267px;
+    height: 45px;
   }
   .popup textarea {
-    width: 396px;
+    box-sizing: border-box;
+    width: 428px;
+    height: 155px;
   }
   .popup .input-label {
     top: 10px;
     left: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .popup-title {
+    margin: 0;
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 28px;
     color: #323232;
   }
+  .popup-btn {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+    .popup-btn .btn {
+      vertical-align: top;
+      margin-top: 5px;
+    }
+  .popup-cross {
+    position: fixed;
+    top: 147px;
+    left: 877px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: url('../img/cross-hover.svg') no-repeat 50% 50%;
+  }
 
 /*каталог*/
 .breadcrumbs {
+  margin-top: -32px;
+  margin-left: -1px;
   width: 560px;
   font-size: 14px;
   line-height: 16px;
@@ -991,22 +1092,28 @@ img {
   .breadcrumbs li::after {
     content: "»";
     margin: 8px;
+    margin-right: 4px;
   }
   .breadcrumbs li:last-child::after {
     display: none;
   }
+.catalog-main {
+  margin-top: -15px;
+}
 h1 {
+  margin: 0;
   font-size: 35px;
   line-height: 41px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .filters {
-  width: 880px;
-  margin-bottom: 40px;
+  width: 950px;
+  margin-top: -15px;
+  margin-bottom: 30px;
   font-size: 0;
 }
 .filters-slyle {
-  padding: 10px 16px;
+  padding: 8px 29px 8px 15px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1023,6 +1130,9 @@ h1 {
     font-size: 16px;
     line-height: 18px;
   }
+    .sorting .filters-slyle {
+      padding: 8px 29px 8px 15px;
+    }
     .select {
       position: relative;
     }
@@ -1035,8 +1145,8 @@ h1 {
       content: " ";
       display: block;
       position: absolute;
-      top: 18px;
-      left: 160px;
+      top: 15px;
+      left: 170px;
       width: 7px;
       height: 5px;
       background: url('../img/select.svg') no-repeat;
@@ -1061,6 +1171,9 @@ h1 {
     font-size: 16px;
     line-height: 18px;
   }
+    .range-filter .filters-slyle {
+      padding: 8px 20px 8px 15px;
+    }
     .price-controls {
       position: relative;
       width: 184px;
@@ -1122,12 +1235,15 @@ h1 {
     line-height: 18px;
   }
     .fat .filters-slyle {
-      padding-left: 40px;
+      padding: 8px 0 8px 45px;
     }
     .fat label {
       position: relative;
-      padding-right: 30px;
+      padding-right: 45px;
       cursor: pointer;
+    }
+    .fat label:last-child {
+      padding-right: 15px;
     }
     .fat label::before,
     .fat label::after {
@@ -1137,7 +1253,7 @@ h1 {
     }
     .fat label::before {
       top: 0;
-      left: -25px;
+      left: -31px;
       width: 18px;
       height: 18px;
       border: solid 1px #ffffff;
@@ -1148,7 +1264,7 @@ h1 {
     .fat label::after {
       display: none;
       top: 4px;
-      left: -21px;
+      left: -27px;
       width: 12px;
       height: 12px;
       background: #ffffff;
@@ -1164,13 +1280,16 @@ h1 {
     line-height: 18px;
   }
     .fillers .filters-slyle {
-      padding-left: 40px;
+      padding: 8px 0 8px 40px;
     }
     .fillers label {
       position: relative;
       padding-left: 5px;
-      padding-right: 35px;
+      padding-right: 43px;
       cursor: pointer;
+    }
+    .fillers label:last-child {
+      padding-right: 25px;
     }
     .fillers label::before,
     .fillers label::after {
@@ -1198,13 +1317,14 @@ h1 {
       display: block;
     }
   .filters-title {
-    margin: 15px 20px 5px;
+    margin: 17px 16px 5px;
     font-size: 14px;
     line-height: 16px;
   }
   .filters .btn {
     display: inline-block;
     vertical-align: bottom;
+    padding: 7px 25px;
     font-size: 16px;
     line-height: 18px;
     background: rgba(248,247,244,0.2);
@@ -1225,15 +1345,16 @@ h1 {
       outline: 0;
     }
 .goods {
-  margin-bottom: 80px;
+  margin: 32px 0 50px 92px;
 }
   .row-1,
   .row-2,
   .row-3 {
-    min-height: 325px;
+    margin-bottom: -46px;
     font-size: 0;
   }
 .paginator {
+  margin-right: 93px;
   margin-bottom: 30px;
   text-align: right;
 }
@@ -1242,7 +1363,7 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
-  vertical-align: top;;
+  vertical-align: top;
 }
   .paginator li {
     display: inline-block;
