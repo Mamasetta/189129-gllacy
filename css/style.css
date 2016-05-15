@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Roboto-black';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
          url('../fonts/roboto-black-webfont.woff') format('woff');
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -15,6 +15,17 @@
          url('../fonts/Glyphter.svg#Glyphter') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
 body {
   line-height: 22px;
@@ -151,7 +162,7 @@ img {
     color: #323232;
     font-size: 16px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: normal;
   }
 .label-box {
   position: relative;
@@ -208,6 +219,7 @@ img {
       vertical-align: top;
       position: relative;
       top: 10px;
+      padding-bottom: 5px;
     }
     .page-navigation .menu > li > a {
       display: block;
@@ -259,7 +271,7 @@ img {
     }
     .submenu li {
       font-size: 14px;
-      font-weight: 500;
+      font-weight: normal;
       line-height: 16px;
     }
     .submenu a {
@@ -296,7 +308,7 @@ img {
     margin-left: 5px;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: normal;
   }
     .search {
       display: inline-block;
@@ -311,6 +323,7 @@ img {
       }
     .search-block {
       position: relative;
+      padding-bottom: 5px;
     }
       .search-content {
         display: none;
@@ -328,9 +341,13 @@ img {
         box-sizing: border-box;
         width: 311px;
       }
-      .search-block:hover .search-content {
+      .search-content-show {
         display: block;
       }
+      /*
+      .search-block:hover search-content {
+        display: block;
+      }*/
       .search-content .input-label {
         top: 10px;
         left: 14px;
@@ -350,6 +367,7 @@ img {
       }
     .login-block {
       position: relative;
+      padding-bottom: 5px;
     }
       .login-hover {
         display: none;
@@ -374,8 +392,15 @@ img {
         top: 10px;
         left: 14px;
       }
+      /*
       .login-block:hover .login-hover {
         display: block;
+      }*/
+      .login-hover-show {
+        display: block;
+      }
+      .login-hover-error {
+        animation: shake 0.6s;
       }
       .login-left {
         float: left;
@@ -414,6 +439,7 @@ img {
     }
       .basket-full-block {
         position: relative;
+        padding-bottom: 5px;
       }
       .basket-full-block table {
         display: none;
@@ -670,7 +696,7 @@ img {
   margin: 0 auto;
   margin-top: -10px;
   margin-bottom: 30px;
-  font-family: 'Roboto-black';
+  font-weight: 900;
   font-size: 60px;
   line-height: 60px;
   }
@@ -876,6 +902,7 @@ img {
     padding: 0;
     padding-bottom: 20px;
     column-count: 2;
+    font-weight: normal;
   }
   .about li {
     display: inline-block;

@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -57,11 +57,11 @@
                 <div class="login-hover">
                   <form action="#" method="post">
                     <div class="label-box">
-                      <input type="email" class="input-view" required>
+                      <input type="email" class="input-view" name="email" required>
                       <label class="input-label">Электронная почта</label>
                     </div>
                     <div class="label-box">
-                      <input type="password" class="input-view" required>
+                      <input type="password" class="input-view" name="password" required>
                       <label class="input-label">Пароль</label>
                     </div>
                     <div class="login-left">
@@ -249,7 +249,57 @@
       </div>
     </div>
     <script>
+      var searchLink = document.querySelector(".search-block");
+      var searchPopup = document.querySelector(".search-content");
+      var search = searchPopup.querySelector("[name=search]");
+      searchLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        searchPopup.classList.add("search-content-show");
+        search.focus();
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (searchPopup.classList.contains("search-content-show")) {
+            searchPopup.classList.remove("search-content-show");
+          }
+        }
+      });
 
+      var loginLink = document.querySelector(".login-block");
+      var loginPopup = document.querySelector(".login-hover");
+      var email = loginPopup.querySelector("[name=email]");
+      var password = loginPopup.querySelector("[name=password]");
+      var loginForm = loginPopup.querySelector("form")
+      var storage = localStorage.getItem("email");
+      loginLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        loginPopup.classList.add("login-hover-show");
+        if (storage) {
+          email.value = storage;
+          password.focus();
+        } else {
+          email.focus();
+        }
+      });
+      emailForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (!email.value || !password.value) {
+          event.preventDefault();
+          loginPopup.classList.remove("login-hover-error");
+          loginPopup.offsetWidth = loginPopup.offsetWidth;
+          loginPopup.classList.add("login-hover-error");
+        } else {
+          localStorage.setItem("email", email.value);
+        }
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (loginPopup.classList.contains("login-hover-show")) {
+            loginPopup.classList.remove("login-hover-show");
+            loginPopup.classList.remove("login-hover-error");
+          }
+        }
+      });
     </script>
   </body>
 </html>
