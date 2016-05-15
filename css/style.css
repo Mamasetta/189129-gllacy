@@ -411,13 +411,13 @@ img {
       font-weight: bold;
     }
       .basket-full-block table {
-        display: one;
+        display: none;
         position: absolute;
-        right: 62px;
+        right: 100px;
         top: 60px;
         z-index: 10;
-        width: 540px;
-        padding: 15px 25px 10px 15px;
+        width: 500px;
+        padding: 15px 5px 10px 15px;
         background: #f8f7f4;
         box-shadow: 0 10px 10px rgba(0,0,0,0.4);
         border-radius: 5px;
