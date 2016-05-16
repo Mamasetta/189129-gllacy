@@ -27,6 +27,20 @@
     transform: translateX(10px);
   }
 }
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   line-height: 22px;
   min-height: 1200px;
@@ -442,7 +456,7 @@ img {
         position: relative;
         padding-bottom: 5px;
       }
-      .basket-full-block table {
+      .basket-full-block .basket-full-hover {
         display: none;
         position: absolute;
         right: 0;
@@ -523,12 +537,12 @@ img {
       .basket-full-block .btn {
         padding: 10px 12px;
       }
-      .basket-full-block:hover table{
-        display: block;
-      }
-      /*.basket-full-show {
+      /*.basket-full-block:hover .basket-full-hover {
         display: block;
       }*/
+      .basket-full-show {
+        display: block;
+      }
   .contacts p {
     padding-top: 5px;
     font-size: 14px;
@@ -698,7 +712,7 @@ img {
   .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 60px;
@@ -906,7 +920,7 @@ img {
     padding: 0;
     padding-bottom: 20px;
     column-count: 2;
-    font-weight: normal;
+    font-weight: 500;
   }
   .about li {
     display: inline-block;
@@ -1119,11 +1133,16 @@ img {
     padding: 0;
     border: 0;
     background: url('../img/cross-hover.svg') no-repeat 50% 50%;
+    outline: 0;
   }
+.popup-show {
+  display: block;
+  animation: bounce 0.6s;
+}
 
 /*каталог*/
 .breadcrumbs {
-  margin-top: -32px;
+  margin-top: -38px;
   margin-left: -1px;
   width: 560px;
   font-size: 14px;
@@ -1246,8 +1265,8 @@ h1 {
       display: block;
       position: absolute;
       top: 16px;
-      left: 54px;
-      width: 78px;
+      left: 53px;
+      width: 81px;
       height: 4px;
       background: #ffffff;
     }
@@ -1260,7 +1279,7 @@ h1 {
       height: 20px;
       border-radius: 50%;
       background: #ffffff;
-      box-shadow: ;
+      box-shadow: 0 1px 2px 0 rgba(19,19,19,0.1);
     }
     .min-toggle {
       left: 34px;

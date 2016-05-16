@@ -72,7 +72,7 @@
             </div>
             <div class="basket-full-block">
               <a href="#" class="basket-full">2 товара</a>
-              <table>
+              <table class="basket-full-hover">
                 <tr>
                   <td><a class="cross"></a></td>
                   <td><img src="img/good-1.png" class="basket-img" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
@@ -363,19 +363,19 @@
         }
       });
 
-      // var basketLink = document.querySelector(".basket-full-block");
-      // var basketPopup = document.querySelector(".basket-full-block table");
-      // basketLink.addEventListener("click", function(event) {
-        // event.preventDefault();
-        // basketPopup.classList.add("basket-full-show");
-      // });
-      // window.addEventListener("keydown", function(event) {
-        // if (event.keyCode === 27) {
-          // if (basketPopup.classList.contains("basket-full-show")) {
-          // basketPopup.classList.remove("basket-full-show");
-      //     // }
-      //   }
-      // });
+      var basketLink = document.querySelector(".basket-full");
+      var basketPopup = document.querySelector(".basket-full-hover");
+      basketLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        basketPopup.classList.add("basket-full-show");
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (basketPopup.classList.contains("basket-full-show")) {
+            basketPopup.classList.remove("basket-full-show");
+          }
+        }
+      });
     </script>
   </body>
 </html>
