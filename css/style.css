@@ -540,7 +540,7 @@ img {
       /*.basket-full-block:hover .basket-full-hover {
         display: block;
       }*/
-      .basket-full-show {
+      .basket-full-block .basket-full-show {
         display: block;
       }
   .contacts p {

@@ -233,7 +233,7 @@
               <label class="input-label">Как вас зовут?</label>
             </div>
             <div class="label-box">
-              <input type="email" class="input-view" required>
+              <input type="email" class="input-view" name="email" required>
               <label class="input-label">Ваша почта для ответа?</label>
             </div>
             <div class="label-box">
@@ -302,7 +302,33 @@
         }
       });
 
-
+      var popupLink = document.querySelector(".map-info .btn");
+      var popupPopup = document.querySelector(".popup-bg");
+      var popupClose = popupPopup.querySelector(".popup-cross");
+      var popupName = popupPopup.querySelector("[name=name]");
+      var popupEmail = popupPopup.querySelector("[name=email]");
+      var storage = localStorage.getItem("name");
+      popupLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupPopup.classList.add("popup-show");
+        if (storage) {
+          name.value = storage;
+          popupEmail.focus();
+        } else {
+          popupName.focus();
+        }
+      });
+      popupClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        popupPopup.classList.remove("popup-show");
+      });
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popupPopup.classList.contains("popup-show")) {
+            popupPopup.classList.remove("popup-show");
+          }
+        }
+      });
     </script>
   </body>
 </html>
