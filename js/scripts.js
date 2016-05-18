@@ -94,12 +94,12 @@ ymaps.ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: '../img/pin.png',
+            iconImageHref: 'img/pin.png',
             // Размеры метки.
             iconImageSize: [218, 142],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-3, -42]
+            iconImageOffset: [-40, -135]
         });
 
     myMap.geoObjects.add(myPlacemark);

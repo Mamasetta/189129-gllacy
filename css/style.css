@@ -599,6 +599,9 @@ img {
       color: #ffffff;
       line-height: 24px;
     }
+.page-footer {
+  margin-top: 20px;
+}
 .footer-social {
   float: left;
   width: 267px;
@@ -1057,29 +1060,18 @@ img {
       padding: 10px 18px;
     }
 .map {
-  position:relative;
+  position: relative;
   width: 100%;
   height: 430px;
   padding: 0;
   margin: 0;
   background: #ece5c8 url('../img/map.jpg');
 }
-  .map-content {
-    position: absolute;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-  }
-  .map-container {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative
-  }
   .map-info {
-    float:right;
-    top: 62px;
-    right: 27px;
+    position: absolute;
+    bottom: 62px;
+    right: 101px;
+    z-index: 2;
     padding: 15px 25px 30px;
     color: #323232;
     font-size: 14px;
