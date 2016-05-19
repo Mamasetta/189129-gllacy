@@ -853,6 +853,7 @@ img {
 .container-goods {
   width: 1188px;
   padding: 0 1px;
+  margin: 0 auto;
 }
 .hit {
   margin-left: 93px;
