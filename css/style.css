@@ -106,7 +106,7 @@ img {
 }
 .container {
   width: 1146px;
-  margin: 0 auto;;
+  margin: 0 auto;
   padding: 0 27px;
 }
 .link {
@@ -852,11 +852,10 @@ img {
   }
 .container-goods {
   width: 1188px;
-  padding: 0 1px;
   margin: 0 auto;
+  padding: 0 1px;
 }
 .hit {
-  margin-left: 93px;
   margin-bottom: -40px;
   font-size: 0;
 }
@@ -864,7 +863,7 @@ img {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin-right: 10px;
+    margin-right: 18px;
     padding: 8px 8px 17px;
     width: 267px;
     font-size: 16px;
@@ -1483,26 +1482,20 @@ h1 {
       border: 0;
       box-shadow: inset 0 1px 2px #6c6d6c;
     }
-.goods {
-  margin: 33px 0 50px 92px;
+.row-1,
+.row-2,
+.row-3 {
+  margin-bottom: -46px;
+  padding: 0;
+  font-size: 0;
 }
-  .row-1,
-  .row-2,
-  .row-3 {
-    margin: 0;
-    padding: 0;
-    margin-bottom: -46px;
-    font-size: 0;
-  }
 .paginator {
-  margin-right: 93px;
   margin-bottom: 30px;
   text-align: right;
 }
 .paginator ul,
 .paginator li {
   list-style: none;
-  margin: 0;
   padding: 0;
   vertical-align: top;
 }
